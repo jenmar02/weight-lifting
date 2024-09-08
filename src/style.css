@@ -1,0 +1,102 @@
+body {
+  background: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+}
+h1 {
+  text-align: center;
+  color: #66bfbf;
+}
+h2 {
+  text-align: center;
+  color: #fdcea8;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #d2ebf6;
+  background: white;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 10px 15px;
+  transition: all 150ms ease-in-out;
+}
+footer {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+button:hover {
+  background: #d2ebf6;
+  cursor: pointer;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.theme-button {
+  font-size: 12px;
+  background: black;
+  color: white;
+  padding: 5px 8px;
+  transition: transform 150ms ease-in-out;
+}
+.theme-button:hover {
+  color: black;
+  background: white;
+}
+.intro-picture {
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+.intro-picture:hover {
+  filter: contrast(50%);
+  transform: scale(1.1);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin: 20px 0;
+}
+.grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: all 150ms ease-in-out;
+}
+.grid img:hover {
+  transform: scale(1.2);
+}
+.img-2 {
+  height: 190px;
+}
+.img-4 {
+  height: 165px;
+}
+.dark {
+  background: linear-gradient(to left, rgb(255, 95, 109), rgb(255, 195, 113));
+  color: white;
+}
+.dark .container {
+  background: gray;
+}
+.dark a {
+  color: white;
+}
+.dark h1 {
+  color: #04a9a0;
+}
+.dark h2 {
+  color: coral;
+}
+.dark button:hover {
+  background: #04a9a0;
+}
