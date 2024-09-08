@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Lifting</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+      }
+      h1 {
+        text-align: center;
+        color: #66bfbf;
+      }
+      h2 {
+        text-align: center;
+        color: #fdcea8;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #d2ebf6;
+        background: white;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+      img {
+        max-width: 100%;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      button:hover {
+        background: #d2ebf6;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .theme-button {
+        font-size: 12px;
+        background: black;
+        color: white;
+        padding: 5px 8px;
+        transition: transform 150ms ease-in-out;
+      }
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+      .intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .intro-picture:hover {
+        filter: contrast(50%);
+        transform: scale(1.1);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        margin: 20px 0;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.2);
+      }
+      .img-2 {
+        height: 190px;
+      }
+      .img-4 {
+        height: 165px;
+      }
+      .dark {
+        background: linear-gradient(
+          to left,
+          rgb(255, 95, 109),
+          rgb(255, 195, 113)
+        );
+        color: white;
+      }
+      .dark .container {
+        background: gray;
+      }
+      .dark a {
+        color: white;
+      }
+      .dark h1 {
+        color: #04a9a0;
+      }
+      .dark h2 {
+        color: coral;
+      }
+      .dark button:hover {
+        background: #04a9a0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>What is Weight Lifting?</h1>
+      <h2>My favorite hobby</h2>
+      <a href="https://en.wikipedia.org/wiki/Weightlifting" target="_blank">
+        <img
+          src="https://cdn.oxygenmag.com/wp-content/uploads/2017/11/cardio.jpg?width=730"
+          alt="Women preparing for an RDL"
+          class="intro-picture"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/406/original/plank.jpg?1718666662"
+          alt="Women doing a dumbell plank row"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/142/507/original/pexels-karen-irala-242489519-14204881.jpg?1725757025"
+          alt="Women flexing back muscles"
+          class="img-2"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/405/original/chestPress.jpg?1718666554"
+          alt="women doing a bench chest press"
+        />
+        <img
+          src="https://cdn.muscleandstrength.com/sites/default/files/woman-glute-workout-in-gym.jpg"
+          alt="Women doing a Bulgarian Split Squat"
+          class="img-4"
+        />
+      </div>
+      <p>
+        Weightlifting or weight lifting generally refers to physical exercises
+        and sports in which people lift weights, often in the form of dumbbells
+        or barbells. People engage in weightlifting for a variety of different
+        reasons. These can include: developing physical strength; promoting
+        health and fitness; competing in weightlifting sports; and developing a
+        muscular and aesthetic physique.
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/List_of_weight_training_exercises"
+        target="_blank"
+      >
+        <button class="link-button">Learn more about Weight Lifting</button>
+      </a>
+    </div>
+    <footer>Coded with 🫶🏼 by Jennifer Martinez</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
